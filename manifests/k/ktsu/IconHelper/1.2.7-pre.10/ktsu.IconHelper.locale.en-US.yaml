@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+PackageIdentifier: ktsu.IconHelper
+PackageVersion: 1.2.7-pre.10
+PackageLocale: en-US
+Publisher: ktsu.dev contributors
+PublisherUrl: https://github.com/ktsu-dev
+PublisherSupportUrl: https://github.com/ktsu-dev/IconHelper/issues
+# PrivacyUrl:
+Author: ktsu.dev contributors
+PackageName: ktsu.IconHelper
+PackageUrl: https://github.com/ktsu-dev/IconHelper
+License: MIT
+LicenseUrl: https://github.com/ktsu-dev/IconHelper/blob/main/LICENSE.md
+Copyright: Copyright (c) ktsu.dev contributors
+# CopyrightUrl:
+ShortDescription: A utility library for working with icons and images in .NET applications.
+Description: IconHelper
+Moniker: iconhelper
+Tags:
+- dotnet
+- csharp
+
+ReleaseNotes: |-
+  See full changelog at: https://github.com/ktsu-dev/IconHelper/blob/main/CHANGELOG.md
+ReleaseNotesUrl: https://github.com/ktsu-dev/IconHelper/releases/tag/v1.2.7-pre.10
+# PurchaseUrl:
+# InstallationNotes:
+Documentations:
+- DocumentLabel: README
+  DocumentUrl: https://github.com/ktsu-dev/IconHelper/blob/main/README.md
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

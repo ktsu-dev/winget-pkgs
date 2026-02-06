@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: ktsu.IconHelper
+PackageVersion: 1.2.7-pre.10
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: zip
+InstallModes:
+- interactive
+- silent
+UpgradeBehavior: install
+Commands:
+- iconhelper
+- ktsu.IconHelper
+FileExtensions:
+- cs
+- json
+- xml
+- config
+- txt
+ReleaseDate: 2026-02-06
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/ktsu-dev/IconHelper/releases/download/v1.2.7-pre.10/IconHelper-1.2.7-pre.10-win-x86.zip
+  InstallerSha256: 74D2B2917B1012399F7CB2D2F07DF636303C6FB6C037BA2AF477B62187D5B04F
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ktsu.IconHelper.exe
+    PortableCommandAlias: iconhelper
+- Architecture: arm64
+  InstallerUrl: https://github.com/ktsu-dev/IconHelper/releases/download/v1.2.7-pre.10/IconHelper-1.2.7-pre.10-win-arm64.zip
+  InstallerSha256: D3BFB8ECDCD0F8C837AA109229965A756EE425D682FBBA272DB529CEF71995CA
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ktsu.IconHelper.exe
+    PortableCommandAlias: iconhelper
+- Architecture: x64
+  InstallerUrl: https://github.com/ktsu-dev/IconHelper/releases/download/v1.2.7-pre.10/IconHelper-1.2.7-pre.10-win-x64.zip
+  InstallerSha256: 4F0CE6C1C4FB458FE717C5933592220C84D95EEB429455B602D709C06E1EBD41
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ktsu.IconHelper.exe
+    PortableCommandAlias: iconhelper
+ManifestType: installer
+ManifestVersion: 1.10.0
