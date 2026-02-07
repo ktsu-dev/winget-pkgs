@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: ktsu.BuildMonitor
+PackageVersion: 1.2.27-pre.1
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: zip
+InstallModes:
+- interactive
+- silent
+UpgradeBehavior: install
+Commands:
+- buildmonitor
+- ktsu.BuildMonitor
+FileExtensions:
+- cs
+- json
+- xml
+- config
+- txt
+ReleaseDate: 2026-02-06
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/ktsu-dev/BuildMonitor/releases/download/v1.2.27-pre.1/BuildMonitor-1.2.27-pre.1-win-x86.zip
+  InstallerSha256: 0011057C4E608D9CFD99B27DCEF491AE131EDBA9CFD6AF21A307A4B4A641F8A5
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ktsu.BuildMonitor.exe
+    PortableCommandAlias: buildmonitor
+- Architecture: arm64
+  InstallerUrl: https://github.com/ktsu-dev/BuildMonitor/releases/download/v1.2.27-pre.1/BuildMonitor-1.2.27-pre.1-win-arm64.zip
+  InstallerSha256: 51F55218DBE0ABDCE0E11D41FB93AF5BDE522633851E0D93DF70831BBE78B0AA
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ktsu.BuildMonitor.exe
+    PortableCommandAlias: buildmonitor
+- Architecture: x64
+  InstallerUrl: https://github.com/ktsu-dev/BuildMonitor/releases/download/v1.2.27-pre.1/BuildMonitor-1.2.27-pre.1-win-x64.zip
+  InstallerSha256: 696165BAD420DD8A341B875E7C71087E918CA9F1EAC7A7897F13FD93FE9454A2
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ktsu.BuildMonitor.exe
+    PortableCommandAlias: buildmonitor
+ManifestType: installer
+ManifestVersion: 1.10.0
