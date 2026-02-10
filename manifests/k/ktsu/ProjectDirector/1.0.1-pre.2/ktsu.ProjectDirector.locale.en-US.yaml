@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+PackageIdentifier: ktsu.ProjectDirector
+PackageVersion: 1.0.1-pre.2
+PackageLocale: en-US
+Publisher: ktsu.dev contributors
+PublisherUrl: https://github.com/ktsu-dev
+PublisherSupportUrl: https://github.com/ktsu-dev/ProjectDirector/issues
+# PrivacyUrl:
+Author: ktsu.dev contributors
+PackageName: ProjectDirector
+PackageUrl: https://github.com/ktsu-dev/ProjectDirector
+License: MIT
+LicenseUrl: https://github.com/ktsu-dev/ProjectDirector/blob/main/LICENSE.md
+Copyright: Copyright (c) ktsu.dev contributors
+# CopyrightUrl:
+ShortDescription: A csharp application
+Description: ProjectDirector
+Moniker: projectdirector
+Tags:
+- dotnet
+- csharp
+
+ReleaseNotes: |-
+  See full changelog at: https://github.com/ktsu-dev/ProjectDirector/blob/main/CHANGELOG.md
+ReleaseNotesUrl: https://github.com/ktsu-dev/ProjectDirector/releases/tag/v1.0.1-pre.2
+# PurchaseUrl:
+# InstallationNotes:
+Documentations:
+- DocumentLabel: README
+  DocumentUrl: https://github.com/ktsu-dev/ProjectDirector/blob/main/README.md
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0

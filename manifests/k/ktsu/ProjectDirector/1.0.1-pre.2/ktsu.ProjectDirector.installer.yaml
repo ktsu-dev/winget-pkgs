@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+PackageIdentifier: ktsu.ProjectDirector
+PackageVersion: 1.0.1-pre.2
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: zip
+InstallModes:
+- interactive
+- silent
+UpgradeBehavior: install
+Commands:
+- projectdirector
+- ProjectDirector
+FileExtensions:
+- cs
+- json
+- xml
+- config
+- txt
+ReleaseDate: 2026-02-09
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.DotNet.DesktopRuntime.10
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/ktsu-dev/ProjectDirector/releases/download/v1.0.1-pre.2/ProjectDirector-1.0.1-pre.2-win-x64.zip
+  InstallerSha256: B7B76BC9C300C6B2FEA0558064D4EE88339BCDEE54F0924BC2DDDBEF863DBC83
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ProjectDirector.exe
+    PortableCommandAlias: projectdirector
+- Architecture: x86
+  InstallerUrl: https://github.com/ktsu-dev/ProjectDirector/releases/download/v1.0.1-pre.2/ProjectDirector-1.0.1-pre.2-win-x86.zip
+  InstallerSha256: F7D45D104A7D5BC8993A4C4BD415B8C57F17743ED6CBB8132263C9A03C6632B7
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ProjectDirector.exe
+    PortableCommandAlias: projectdirector
+- Architecture: arm64
+  InstallerUrl: https://github.com/ktsu-dev/ProjectDirector/releases/download/v1.0.1-pre.2/ProjectDirector-1.0.1-pre.2-win-arm64.zip
+  InstallerSha256: C2B2DCAF0391E576260467274777954BC10BD17E6F7F772FD35D158CF5C55E67
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: ProjectDirector.exe
+    PortableCommandAlias: projectdirector
+ManifestType: installer
+ManifestVersion: 1.10.0
